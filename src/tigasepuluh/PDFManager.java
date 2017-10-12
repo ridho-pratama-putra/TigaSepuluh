@@ -39,7 +39,8 @@ import org.apache.pdfbox.text.PDFTextStripper;
 public class PDFManager {
     private int Count;
     private String filePath;
-    public static void PDFToTxt() throws IOException
+    //public static void PDFToTxt() throws IOException
+	public static void main(String[] args) throws IOException 
     {
         String txtPath= "D:\\Kuliah\\rancangan document indexing\\dir-txt\\";
         String pdfPath= "D:\\Kuliah\\rancangan document indexing\\dir-pdf";

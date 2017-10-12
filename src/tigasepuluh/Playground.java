@@ -21,6 +21,7 @@ import org.apache.lucene.index.IndexWriterConfig.OpenMode;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
+import org.apache.lucene.util.Version;
 import org.apache.pdfbox.examples.lucene.LucenePDFDocument;
 
 
@@ -48,6 +49,7 @@ public class Playground {
 //				Directory dir ;
 //				dir = FSDirectory.open(indexDir);
 				Directory dir = FSDirectory.open(indexDir);
+				
 				Analyzer analyzer = new StandardAnalyzer();
 				IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
 				if (create)
@@ -70,7 +72,7 @@ public class Playground {
 				System.out.println(" caught a " + e.getClass() + "\n with message: " + e.getMessage());
 			}
 		}
-		}
+	}
 
 	private static void indexDocs(IndexWriter writer, File file) throws IOException {
 		if (file.canRead())

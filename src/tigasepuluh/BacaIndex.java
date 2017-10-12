@@ -43,7 +43,7 @@ public class BacaIndex {
         for (ScoreDoc sd : foundDocs.scoreDocs)
         {
             Document d = searcher.doc(sd.doc);
-            System.out.println("Path : "+ d.get("path") + ", Score : " + sd.score);
+            System.out.println("Path : "+ d.get("path") + ", Score : " + sd.score + ", Modified :" + d.get("modified"));
         }
     }
      

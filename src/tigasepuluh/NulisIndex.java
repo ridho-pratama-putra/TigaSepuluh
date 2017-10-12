@@ -14,13 +14,13 @@ import java.nio.file.Paths;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.CharArraySet;
-import org.apache.lucene.analysis.StopwordAnalyzerBase;
-import org.apache.lucene.analysis.TokenStream;
+//import org.apache.lucene.analysis.CharArraySet;
+//import org.apache.lucene.analysis.StopwordAnalyzerBase;
+//import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.core.SimpleAnalyzer;
-import org.apache.lucene.analysis.core.StopAnalyzer;
-import org.apache.lucene.analysis.en.PorterStemFilter;
-import org.apache.lucene.analysis.id.IndonesianAnalyzer;
+//import org.apache.lucene.analysis.core.StopAnalyzer;
+//import org.apache.lucene.analysis.en.PorterStemFilter;
+//import org.apache.lucene.analysis.id.IndonesianAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.Field.Store;
@@ -40,7 +40,8 @@ import org.apache.lucene.store.FSDirectory;
  */
 public class NulisIndex {
 
-    public static void write() throws IOException
+    //public static void main() throws IOException
+	public static void main(String[] args) throws IOException 
     {
         String txtPath= "D:\\Kuliah\\rancangan document indexing\\dir-txt\\";
     	String indexPath= "D:\\Kuliah\\rancangan document indexing\\dir-index\\";
